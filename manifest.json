@@ -1,0 +1,24 @@
+{
+  "name": "PageBeautifier",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "让百度谷歌变得更加美丽优雅",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "页面美化器",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.baidu.com/*",
+        "*://www.google.com/*"
+      ],
+      "js": [
+        "jquery-3.5.0.min.js",
+        "pageBeautifier.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
