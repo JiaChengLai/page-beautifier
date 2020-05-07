@@ -90,21 +90,27 @@ function beautifyGoogle() {
     let content =
         /* 搜索框左侧Logo、搜索框、搜索结果 */
         ".logo{display:none!important}"
-        + ".logo+div,.logo+div+div{margin-left:20vw}"
+        + ".logo+div,.logo+div+div{margin-left:21vw}"
         /* 隐藏查看以下内容的结果 */
         + ".rhscol {display:none!important}"
         /* Tab */
-        + "#hdtbSum{display: flex;justify-content: center;margin-left: -10vw;}"
+        + "#hdtb-msb{margin-left: 21vw;}"
         /* 搜索结果条数 */
         + "#slim_appbar{display:none!important}"
-        /* 搜索内容container */
-        + "#rso{margin-left:20vw}"
-        /* 搜索内容中的图片、视频List */
-        + "g-section-with-header{width:37vw}"
+        /* 搜索内容Container */
+        + "#center_col{margin-left:32vw!important}"
         /* 相关搜索 */
-        + "#extrares{margin-left: 31.5vw;}"
+        + "#brs{margin-left: 12vw;}"
         /* 分页栏 */
-        + "#foot{display: flex; justify-content: center; width: 78vw!important;}"
+        // 隐藏分页栏上方的图标
+        + "#foot td span{display:none}"
+        // 分页栏样式
+        + "#foot td{width: 34px; height: 34px; border: 1px solid #e1e2e3; cursor: pointer; line-height: 34px;color:black;margin-left: 5px!important; display: inline-block;}"
+        // 上一页按钮
+        + "#foot td:first-child{border:none;margin-right: 20px!important;}"
+        // 下一页按钮
+        + "#foot td:last-child{border:none;margin-left: 20px!important;}"
+        + "#foot td:last-child span{margin-left: 0px!important;}"
         /* Foot最后的无用信息 */
         + "#footcnt{display:none!important}"
     ;
