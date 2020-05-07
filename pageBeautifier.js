@@ -99,8 +99,6 @@ function beautifyGoogle() {
         + "#slim_appbar{display:none!important}"
         /* 搜索内容Container */
         + "#center_col{margin-left:32vw!important}"
-        /* 相关搜索 */
-        + "#brs{margin-left: 12vw;}"
         /* 分页栏 */
         // 隐藏分页栏上方的图标
         + "#foot td span{display:none}"
