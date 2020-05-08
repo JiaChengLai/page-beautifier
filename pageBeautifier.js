@@ -90,11 +90,11 @@ function beautifyGoogle() {
     let content =
         /* 搜索框左侧Logo、搜索框、搜索结果 */
         ".logo{display:none!important}"
-        + ".logo+div,.logo+div+div{margin-left:21vw}"
+        + ".logo+div,.logo+div+div{margin-left:23vw!important}"
         /* 隐藏查看以下内容的结果 */
         + ".rhscol {display:none!important}"
         /* Tab */
-        + "#hdtb-msb{margin-left: 21vw;}"
+        + "#hdtb-msb{margin-left: 23vw;!important}"
         /* 搜索结果条数 */
         + "#slim_appbar{display:none!important}"
         /* 搜索内容Container */
