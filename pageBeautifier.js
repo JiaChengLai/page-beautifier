@@ -23,13 +23,11 @@ function beautifyBaiDu() {
         "*{font-family: arial,sans-serif!important;}"
         /* 隐藏热点 */
         + "#content_right {display:none!important }"
-        /* 搜索内容居中 */
-        + "#content_left{margin-left: 24vw;margin-top:25px}"
         /* =============Head(搜索框、Tab)================ */
         /* 头 */
         + "#head{border: none;}"
         /* 顶部搜索框 */
-        + ".s_form{margin-left:32vw}"
+        + ".s_form{width: fit-content!important; margin: 0 auto; padding-left: 8vw;}"
         + ".bg{border-radius: 60px; margin-right: 6px; padding: 2px 0;}"
         /* 搜索框左侧logo */
         + "#result_logo{display:none!important}"
@@ -37,8 +35,11 @@ function beautifyBaiDu() {
         + ".head_nums_cont_outer,.head_nums_cont_inner{display:none!important}"
         /* tab条 */
         + "#s_tab{border-bottom: 1px solid #ebebeb; background: white;}"
-        + ".s_tab>div{margin-left:24vw}"
+        + ".s_tab>div{width: fit-content!important; margin: 0 auto!important;}"
         /* =============搜索内容=============== */
+        /* 搜索内容居中 */
+        + "#container{width: fit-content; margin: 0 auto;}"
+        + "#content_left{width: fit-content; margin: 0 auto;margin-top:25px}"
         /* 不带图——内容摘要 */
         + ".c-abstract{width:38vw;word-break: break-all;font-size:14px}"
         /* 带图——内容摘要 */
@@ -57,19 +58,19 @@ function beautifyBaiDu() {
         + ".t{font-size:16px}"
         /* =============Foot(相关搜索、Foot、Page)=============== */
         /* 相关搜索 */
-        + "#rs{width: 84vw; display: flex; flex-direction: row; justify-content: center;}"
+        + "#rs{width: fit-content;; display: flex; flex-direction: row; justify-content: center;}"
         + ".tt{margin-right: 1vw;}"
         /* foot——帮助、举报、用户反馈 */
         + "#foot{display:none!important}"
         /* 分页栏 */
-        + "#page{display: flex; justify-content: center; width: 83vw; align-items: flex-start;margin: 30px 0 0;}"
+        + "#page{display: flex; justify-content: center; width: fit-content; align-items: flex-start;margin: 30px 0 0;}"
         + ".fk{display:none!important}"// 分页栏上面的百度Icon
         + ".pc,.n{color: black;}"// 分页栏分页框和上一页下一页按钮
         /* =============适配Tab上的咨讯页=============== */
         /* 资讯结果条数——找到相关资讯xx篇 */
         + "#header_top_bar{display:none!important}"
         /* 分页栏上面的去网页搜索 */
-        + "#gotoPage{text-align: center; width: 87vw;}"
+        + "#gotoPage{text-align: center; width: fit-content;}"
     ;
     style.innerHTML = content;
     document.head.appendChild(style)
